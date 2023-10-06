@@ -1,0 +1,37 @@
+.carousel-bg {
+    background-image: url(../../public/assets/images/comics-wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 25px 25px rgba(0,0,0,0.9);
+    /* transition: 5s; */
+}
+
+.carousel-container {
+    box-shadow: 15px 0 12px -4px rgba(0,0,0,0.9), -15px 0 8px -4px rgba(0,0,0,0.9);
+    width: 500px; 
+    height: 600px;
+}
+
+.caption-title {
+    font-family: 'Bangers', cursive;
+    font-stretch: expanded;
+    font-size: 30px;
+}
+
+.caption-body {
+    font-family: 'Bangers', cursive;
+    font-stretch: expanded;
+    font-size: 20px;
+}
+
+.carousel-item img{
+    width: 500px; 
+    height: 600px;
+}
+
+.hero-name {
+    font-family: 'Bangers', cursive;
+    font-stretch: expanded;
+    font-size: 30px;
+}

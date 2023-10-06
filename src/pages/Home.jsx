@@ -10,9 +10,11 @@ function Home() {
   return (
     <>
         <Navigation/>
-        <RecentComics/>
-        <HeroBio/>
-        <HeroPanel/>
+        <Container>
+            <RecentComics/>
+            <HeroBio/>
+            <HeroPanel/>
+        </Container>
     </>
   )
 }
