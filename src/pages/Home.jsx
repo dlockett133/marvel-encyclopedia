@@ -4,9 +4,16 @@ import RecentComics from '../components/RecentComics'
 import HeroBio from '../components/HeroBio'
 import HeroPanel from '../components/HeroPanel'
 
+import { Container } from 'react-bootstrap';
+
 function Home() {
   return (
-    <div>Home</div>
+    <>
+        <Navigation/>
+        <RecentComics/>
+        <HeroBio/>
+        <HeroPanel/>
+    </>
   )
 }
 

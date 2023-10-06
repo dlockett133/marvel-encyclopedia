@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
+import { Container } from 'react-bootstrap';
 import Home from './pages/Home';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <Home/>
-  );
+      <Home/>
+  )
 }
 
 export default App;
