@@ -4,19 +4,19 @@ import '../../src/assets/RecentComics.css'
 
 function RecentComics() {
   return (
-    <div class="row mt-4 mb-4">
-    <div class="col-md-12 d-flex justify-content-center carousel-bg">
+    <div className="row mt-4 mb-4">
+    <div className="col-md-12 d-flex justify-content-center carousel-bg">
       <div
         id="carouselExampleDark"
-        class="carousel slide carousel-fade slide"
+        className="carousel slide carousel-fade slide"
         data-bs-ride="carousel"
       >
-        <div class="carousel-indicators">
+        <div className="carousel-indicators">
           <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="0"
-            class="active"
+            className="active"
             aria-current="true"
             aria-label="Slide 1"
           ></button>
@@ -33,52 +33,52 @@ function RecentComics() {
             aria-label="Slide 3"
           ></button>
         </div>
-        <div class="carousel-container carousel-inner">
-          <div class="carousel-item active" data-bs-interval="6000">
-            <img src="" class="d-block" id="comics" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="caption-title"></h5>
-              <p class="caption-body"></p>
+        <div className="carousel-container carousel-inner">
+          <div className="carousel-item active" data-bs-interval="6000">
+            <img src="" className="d-block" id="comics" alt="..." />
+            <div className="carousel-caption d-none d-md-block">
+              <h5 className="caption-title"></h5>
+              <p className="caption-body"></p>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="6000">
-            <img src="" class="d-block" id="comics" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="caption-title"></h5>
-              <p class="caption-body"></p>
+          <div className="carousel-item" data-bs-interval="6000">
+            <img src="" className="d-block" id="comics" alt="..." />
+            <div className="carousel-caption d-none d-md-block">
+              <h5 className="caption-title"></h5>
+              <p className="caption-body"></p>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="6000">
-            <img src="" class="d-block" id="comics" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="caption-title"></h5>
-              <p class="caption-body"></p>
+          <div className="carousel-item" data-bs-interval="6000">
+            <img src="" className="d-block" id="comics" alt="..." />
+            <div className="carousel-caption d-none d-md-block">
+              <h5 className="caption-title"></h5>
+              <p className="caption-body"></p>
             </div>
           </div>
         </div>
         <button
-          class="carousel-control-prev"
+          className="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide="prev"
         >
           <span
-            class="carousel-control-prev-icon"
+            className="carousel-control-prev-icon"
             aria-hidden="true"
           ></span>
-          <span class="visually-hidden">Previous</span>
+          <span className="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next"
+          className="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide="next"
         >
           <span
-            class="carousel-control-next-icon"
+            className="carousel-control-next-icon"
             aria-hidden="true"
           ></span>
-          <span class="visually-hidden">Next</span>
+          <span className="visually-hidden">Next</span>
         </button>
       </div>
     </div>
