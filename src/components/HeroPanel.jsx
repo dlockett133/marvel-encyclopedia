@@ -1,12 +1,14 @@
 import React from 'react'
 
-function HeroPanel() {
+function HeroPanel({heroData}) {
   return (
     <div className="hero-container row text-center">
-      <div className="col-md-3 heroes shadow-lg mb-4">
-        <img className="hero-image" alt="Portrait of ${name}" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
-        <h3 className="hero-name">Hero Name</h3>
-      </div>`
+      {heroData.map((hero, i) => (
+        <div className="col-md-3 heroes shadow-lg mb-4" key={hero.id}>
+        <img className="hero-image" alt={`Portrait of ${hero.name}`} src={`${hero.thumbnail.path}/portrait_incredible.${hero.thumbnail.extension}`} />
+        <h3 className="hero-name">{hero.name}</h3>
+        </div>
+      ))}
     </div>
     )
 }

@@ -8,14 +8,17 @@ import API from '../utils/API.js'
 
 import { Container } from 'react-bootstrap';
 
-const heroSearch = async (hero) => {
-    const results = await API.getHeroes(hero)
-    const heroes = results.data.data.results
-    console.log(heroes)
-}
+// const heroSearch = async (hero) => {
+//     const results = await API.getHeroes(hero)
+//     const heroes = results.data.data.results
+//     setHeroData(heroes)
+//     // console.log(heroes)
+// }
 
 function Home() {
     const [searchedHero, setSearchedHero] = useState('')
+    const [heroData, setHeroData] = useState([])
+    const [selectedHero, setSelectedHero] = useState({})
 
     const handleInputChange = (e) => {
         setSearchedHero(e.target.value)
@@ -25,6 +28,13 @@ function Home() {
         console.log(e.target.value)
     }
     
+    const heroSearch = async (hero) => {
+        const results = await API.getHeroes(hero)
+        const heroes = results.data.data.results
+        setHeroData(heroes)
+        console.log(heroData)
+    }
+
     useEffect(() => {
         heroSearch("Silver Surfer")
     }, [])
@@ -50,7 +60,7 @@ function Home() {
             />
             {/* <div>{heroName}</div> */}
             <HeroBio/>
-            <HeroPanel/>
+            <HeroPanel heroData={heroData}/>
         </Container>
     </>
   )
