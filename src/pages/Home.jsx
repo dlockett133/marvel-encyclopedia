@@ -15,10 +15,10 @@ const heroSearch = async (hero) => {
 }
 
 function Home() {
-    const [heroName, setHeroName] = useState('')
+    const [searchedHero, setSearchedHero] = useState('')
 
     const handleInputChange = (e) => {
-        setHeroName(e.target.value)
+        setSearchedHero(e.target.value)
     }
     
     const handleSubmit = (e) => {
@@ -30,13 +30,13 @@ function Home() {
     }, [])
     
     useEffect(() => {
-        console.log(heroName)
-        if (heroName !== ""){
-            heroSearch(heroName)
+        console.log(searchedHero)
+        if (searchedHero !== ""){
+            heroSearch(searchedHero)
         } else {
             heroSearch("Silver Surfer")
         }
-    }, [heroName])
+    }, [searchedHero])
     
 
   return (
