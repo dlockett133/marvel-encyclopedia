@@ -8,6 +8,10 @@ const api = {
 
     getHeroes: (hero) => {
         return axios.get(`https://gateway.marvel.com/v1/public/characters?${key}&nameStartsWith=${hero}&orderBy=name&limit=8`)
+    },
+
+    getHeroById: (id) => {
+        return axios.get(`https://gateway.marvel.com:443/v1/public/characters/${id}?${key}`)
     }
 }
 
