@@ -27,14 +27,9 @@ function RecentComics() {
   useEffect(() => {
     findComics()
   }, [])
-
-  // useEffect(() => {
-  //   // Log the updated comicsData here, it will reflect the latest state value
-  //   console.log(comicsData)
-  // }, [comicsData])
   
   return (
-    <Carousel fade activeIndex={index} onSelect={handleSelect} className='carousel-bg'>
+    <Carousel fade activeIndex={index} onSelect={handleSelect} className='carousel-bg mb-4'>
       {comicsData.map((comic, i) => (
         <Carousel.Item key={i}>
           <img

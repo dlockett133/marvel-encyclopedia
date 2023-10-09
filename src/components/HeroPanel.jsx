@@ -15,7 +15,7 @@ function HeroPanel({heroData, setHeroId}) {
         key={hero.id}
         >
           <img 
-            className="hero-image" 
+            className="img-thumbnail" 
             onClick={() => handleClick(hero.id)}
             style={{cursor: 'pointer'}}
             alt={`Portrait of ${hero.name}`} 
