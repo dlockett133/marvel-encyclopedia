@@ -20,7 +20,7 @@ function HeroBio({heroId, setHeroId}) {
     } else {
       singleHeroSearch("1009592")
     }
-  }, [])
+  }, [heroId])
 
   return (
     <div className="row mb-4">

@@ -71,7 +71,7 @@ function Home() {
             <HeroBio heroId={heroId} setHeroId={setHeroId}/>
             <HeroPanel 
                 heroData={heroData}
-                
+                setHeroId={setHeroId}
             />
         </Container>
     </>
