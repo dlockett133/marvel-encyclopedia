@@ -18,7 +18,7 @@ import { Container } from 'react-bootstrap';
 function Home() {
     const [searchedHero, setSearchedHero] = useState('')
     const [heroData, setHeroData] = useState([])
-    const [selectedHero, setSelectedHero] = useState({})
+    const [heroId, setHeroId] = useState('')
 
     const handleInputChange = (e) => {
         setSearchedHero(e.target.value)
@@ -32,11 +32,20 @@ function Home() {
         const results = await API.getHeroes(hero)
         const heroes = results.data.data.results
         setHeroData(heroes)
-        console.log(heroData)
     }
+
+    // const singleHeroSearch = async (id) => {
+    //     const results = await API.getHeroById(id)
+    //     const hero = results.data.data.results 
+    //     setSelectedHero(hero)
+    //     console.log(selectedHero)
+    // }
+
+    // singleHeroSearch("1009592")
 
     useEffect(() => {
         heroSearch("Silver Surfer")
+        setHeroId("1009592")
     }, [])
     
     useEffect(() => {
@@ -59,8 +68,11 @@ function Home() {
                 handleSubmit={handleSubmit}
             />
             {/* <div>{heroName}</div> */}
-            <HeroBio/>
-            <HeroPanel heroData={heroData}/>
+            <HeroBio heroId={heroId} setHeroId={setHeroId}/>
+            <HeroPanel 
+                heroData={heroData}
+                
+            />
         </Container>
     </>
   )

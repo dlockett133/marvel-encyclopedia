@@ -1,37 +1,50 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import API from '../utils/API'
 
-function HeroBio() {
+import '../assets/HeroBio.css'
+
+function HeroBio({heroId, setHeroId}) {
+
+  const [selectedHero, setSelectedHero] = useState({})
+
+  const singleHeroSearch = async (id) => {
+    const results = await API.getHeroById(id)
+    const hero = results.data.data.results[0] 
+    setSelectedHero(hero)
+    console.log(selectedHero)
+  }
+  
+  useEffect(() => {
+    if (heroId !== ""){
+      singleHeroSearch(heroId)
+    } else {
+      singleHeroSearch("1009592")
+    }
+  }, [])
+
   return (
     <div className="row mb-4">
         <div className="col-md-12">
           <div className="row">
             <div className="col-md-3 text-center">
-              <img
-                alt="Bootstrap Image Preview"
-                src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
-                className="img-thumbnail"
-              />
+              { selectedHero.thumbnail && selectedHero.thumbnail ? (
+                <img
+                alt={`Portrait of ${selectedHero.name}`}
+                src={`${selectedHero.thumbnail.path}/portrait_incredible.${selectedHero.thumbnail.extension}`}
+                className="img-thumbnail" 
+                />) : (
+                <p>Loading....</p>
+              )}
             </div>
-            <div className="col-md-9">
-              <p>
-                Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Aliquam eget
-                sapien sapien. Curabitur in metus urna. In hac habitasse platea
-                dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam
-                purus nibh, lacinia non faucibus et, pharetra in dolor. Sed
-                iaculis posuere diam ut cursus.
-                <em
-                  >Morbi commodo sodales nisi id sodales. Proin consectetur,
-                  nisi id commodo imperdiet, metus nunc consequat lectus, id
-                  bibendum diam velit et dui.</em
-                >
-                    Proin massa magna, vulputate nec bibendum nec, posuere nec
-                    lacus.
-                <small>
-                    Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit.
-                    Nulla euismod ultrices massa, et feugiat ipsum consequateu.
-                </small>
-              </p>
+            <div className="col-md-9 d-flex flex-column">
+              <h3 className="hero-name align-self-center">{selectedHero.name}</h3>
+              <h2 className="hero-name">Bio</h2>
+              <p>{selectedHero.description}</p>
+              <div className='hero-links'>
+                { selectedHero.urls && <a href={selectedHero.urls[0].url} target='_blank' >Lastest Comics</a>}
+              </div>
+            </div>
+            <div>
             </div>
           </div>
         </div>
