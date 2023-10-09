@@ -39,10 +39,16 @@ function HeroBio({heroId, setHeroId}) {
             <div className="col-md-9 d-flex flex-column">
               <h3 className="hero-name align-self-center">{selectedHero.name}</h3>
               <h2 className="hero-name">Bio</h2>
-              <p>{selectedHero.description}</p>
-              <div className='hero-links'>
-                { selectedHero.urls && <a href={selectedHero.urls[0].url} target='_blank' >Lastest Comics</a>}
-              </div>
+              {!selectedHero.description || selectedHero.description === " " ? (
+                <p>Unavailable</p>
+               ) : (
+                <>
+                 <p>{selectedHero.description}</p>
+                 <div className='hero-links'>
+                   { selectedHero.urls && <a href={selectedHero.urls[0].url} target='_blank' rel='noopener noreferrer' >Lastest Comics</a>}
+                 </div>
+                </>
+              )}
             </div>
             <div>
             </div>
