@@ -24,8 +24,15 @@
 ## Description
 
 Do you ever find yourself wondering about the incredible abilities, origin stories, and jaw-dropping adventures of your favorite Marvel heroes? </br>
-Look no further! The Marvel Encyclopedia is your ultimate destination to quench your curiosity.</br></br>
-Here at the Marvel Encyclopedia, we're more than just a database. We're your passport to the Marvel Universe, your trusty sidekick on your quest for knowledge and adventure. Our user-friendly interface and lightning-fast search capabilities make discovering your favorite heroes a breeze. </br></br>
+Look no further! The Marvel Encyclopedia is your ultimate destination to quench your curiosity.</br>
+
+- **Hero Search:** Type in the name of your beloved Marvel hero, and watch as our magical database reveals their secrets.
+
+- **Hero Bio:** Click on your chosen hero to unveil their exhilarating biography, complete with thrilling details about their superhuman abilities and courageous feats.
+
+- **Latest Comics:** Want to stay up-to-date with your hero's latest adventures? We've got you covered! Click on the provided link to dive into their most recent comic escapades.
+
+Here at the Marvel Encyclopedia, we're more than just a database. We're your passport to the Marvel Universe, your trusty sidekick on your quest for knowledge and adventure. Our user-friendly interface and lightning-fast search capabilities make discovering your favorite heroes a breeze. </br>
 So, whether you're an avid Marvel fan or just getting started, join us on this thrilling journey through the pages of Marvel history. Unleash your inner superhero and explore the Marvel Encyclopedia today!
 
 ## Links
