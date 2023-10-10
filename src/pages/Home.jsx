@@ -9,6 +9,7 @@ import API from '../utils/API.js'
 import { Container } from 'react-bootstrap';
 
 function Home() {
+
     const [searchedHero, setSearchedHero] = useState('')
     const [heroData, setHeroData] = useState([])
     const [heroId, setHeroId] = useState('')
@@ -34,19 +35,21 @@ function Home() {
     useEffect(() => {
         if (savedHeroes !== null){
             setHeroArray(savedHeroes)
-        }
+        } 
+        setHeroData(savedHeroes)
+        if (heroArray.length !== 0) {
+            setHeroId(heroArray[0].id)
+        } 
     },[])
 
-    useEffect(() => {
-        heroSearch("Silver Surfer")
-        setHeroId("1009592")
-    }, [])
+    // useEffect(() => {
+    //     heroSearch("Silver Surfer")
+    //     setHeroId("1009592")
+    // }, [])
     
     useEffect(() => {
         if (searchedHero !== ""){
             heroSearch(searchedHero)
-        } else {
-            heroSearch("Silver Surfer")
         }
     }, [searchedHero])
 
@@ -67,7 +70,7 @@ function Home() {
                 handleSubmit={handleSubmit} 
             />
             {/* <div>{heroName}</div> */}
-            <HeroBio heroId={heroId} setHeroId={setHeroId}/>
+            <HeroBio heroId={heroId} setHeroId={setHeroId} savedHeroes={savedHeroes}/>
             <HeroPanel 
                 heroData={heroData}
                 setHeroId={setHeroId}

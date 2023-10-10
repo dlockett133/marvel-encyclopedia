@@ -25,6 +25,10 @@ function HeroPanel({heroData, setHeroId, heroArray, setHeroArray}) {
     }
   }
 
+  if (!heroData){
+    return
+  }
+
   return (
     <div className="hero-container row text-center">
       {heroData.map((hero, i) => (
@@ -32,21 +36,41 @@ function HeroPanel({heroData, setHeroId, heroArray, setHeroArray}) {
         className="col-md-3 heroes mb-4" 
         key={hero.id}
         >
-          <img 
-            className="img-thumbnail" 
-            // onClick={() => handleClick(hero.id)}
-            onClick={() => handleClick({
-              id:hero.id,
-              name:hero.name,
-              path:hero.thumbnail.path,
-              extension:hero.thumbnail.extension
-            })}
-            style={{cursor: 'pointer'}}
-            alt={`Portrait of ${hero.name}`} 
-            src={`${hero.thumbnail.path}/portrait_incredible.${hero.thumbnail.extension}`}
-            key={hero.id}
-          />
-          <h3 className="hero-name">{hero.name}</h3>
+          { hero.path && hero.extension ? (
+          <>
+            <img 
+              className="img-thumbnail" 
+              onClick={() => handleClick({
+                id:hero.id,
+                name:hero.name,
+                path:hero.path,
+                extension:hero.extension
+              })}
+              style={{cursor: 'pointer'}}
+              alt={`Portrait of ${hero.name}`} 
+              src={`${hero.path}/portrait_incredible.${hero.extension}`}
+              key={hero.id}
+            />
+            <h3 className="hero-name">{hero.name}</h3>
+          </>
+          ) : (
+            <>
+            <img 
+              className="img-thumbnail" 
+              onClick={() => handleClick({
+                id:hero.id,
+                name:hero.name,
+                path:hero.thumbnail.path,
+                extension:hero.thumbnail.extension
+              })}
+              style={{cursor: 'pointer'}}
+              alt={`Portrait of ${hero.name}`} 
+              src={`${hero.thumbnail.path}/portrait_incredible.${hero.thumbnail.extension}`}
+              key={hero.id}
+            />
+            <h3 className="hero-name">{hero.name}</h3>
+          </>
+          )}
         </div>
       ))}
     </div>

@@ -3,9 +3,13 @@ import API from '../utils/API'
 
 import '../assets/HeroBio.css'
 
-function HeroBio({heroId, setHeroId}) {
+function HeroBio({heroId, setHeroId, savedHeroes}) {
 
   const [selectedHero, setSelectedHero] = useState({})
+  const [isHeroBio, setIsHeroBio] = useState(false)
+
+  // const savedHeroesData = localStorage.getItem('hero')
+  // const savedHeroes = JSON.parse(savedHeroesData)
 
   const singleHeroSearch = async (id) => {
     const results = await API.getHeroById(id)
@@ -17,10 +21,20 @@ function HeroBio({heroId, setHeroId}) {
   useEffect(() => {
     if (heroId !== ""){
       singleHeroSearch(heroId)
-    } else {
-      singleHeroSearch("1009592")
-    }
+      setIsHeroBio(true)
+    } 
   }, [heroId])
+
+  useEffect(() => {
+    if (savedHeroes !== null) {
+      singleHeroSearch(savedHeroes[0].id)
+      setIsHeroBio(true)
+    } 
+  }, [])
+
+    if (!isHeroBio) {
+      return
+    }
 
   return (
     <div className="row mb-4">
