@@ -37,7 +37,6 @@ function Home() {
     }
 
     useEffect(() => {
-        debugger
         if (savedHeroes !== null){
             setHeroArray(savedHeroes)
         } 
@@ -61,7 +60,6 @@ function Home() {
     }, [searchedHero])
 
     useEffect(() => {
-        debugger
         if (heroArray !== null) {
             if (heroArray.length !== 0) {
                 localStorage.setItem('hero', JSON.stringify(heroArray))
