@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+# Marvel Encyclopedia
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Badges
 
-## Available Scripts
+<img src="https://img.shields.io/github/languages/count/maxxAbow/folx?color=FF9AA2&style=for-the-badge" alt="Languages" />
+<img src="https://img.shields.io/github/languages/top/maxxAbow/folx?color=FFB7B2&style=for-the-badge" alt="Top Language" />
+<img src="https://img.shields.io/github/languages/code-size/maxxAbow/folx?color=FFDAC1&style=for-the-badge" alt="Code Size" />
+<img src="https://img.shields.io/github/repo-size/maxxAbow/folx?color=E2F0CB&style=for-the-badge" alt="Repo Size" />
+<img src="https://img.shields.io/github/last-commit/maxxAbow/folx?color=B5EAD7&style=for-the-badge" alt="Last Commit" />
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Description](#description)
+- [Links](#links)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [Resources](#resources)
+- [Toolset](#toolset)
+- [License](#license)
+- [Contribute](#contribute)
+- [Questions](#questions)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Description
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Do you ever find yourself wondering about the incredible abilities, origin stories, and jaw-dropping adventures of your favorite Marvel heroes? </br>
+Look no further! The Marvel Encyclopedia is your ultimate destination to quench your curiosity.</br></br>
+Here at the Marvel Encyclopedia, we're more than just a database. We're your passport to the Marvel Universe, your trusty sidekick on your quest for knowledge and adventure. Our user-friendly interface and lightning-fast search capabilities make discovering your favorite heroes a breeze. </br></br>
+So, whether you're an avid Marvel fan or just getting started, join us on this thrilling journey through the pages of Marvel history. Unleash your inner superhero and explore the Marvel Encyclopedia today!
 
-### `npm test`
+## Links
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[GitHub](https://github.com/dlockett133/marvel-encyclopedia)
+<br>
+[Live Site]()
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Follow these commands to run the command-line application:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    git clone git@github.com:dlockett133/marvel-encyclopedia.git
+    npm install
+    npm run start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+<h4>Homepage:</h4>
+<img src="./public/assets/images/home-page.gif"></b>
+<h4>Searching your hero feature:</h4>
+<img src="./public/assets/images/search-hero.gif"></b>
+<h4>Viewing the latest comics feature:</h4>
+<img src="./public/assets/images/latest-comics.gif">
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Credits
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+:email: Email:</br>
+[Daikeen Lockett](mailto:daikeen_lockett@yahoo.com)</br>
+</br>
+:octocat: GitHub:</br>
+[Daikeen Lockett](https://github.com/dlockett133/)</br>
+</br>
+:briefcase: Linkedin:</br>
+[Daikeen Lockett](https://linkedin.com/in/daikeen-lockett/)</br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Resources
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[React](https://react.dev/learn)
 
-## Learn More
+[Node](https://nodejs.org/en/docs)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Git Branching](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Agile Software Development](https://en.wikipedia.org/wiki/Agile_software_development)
 
-### Code Splitting
+## Toolset
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=Bootstrap&logoColor=7952B3&labelColor=gray)
 
-### Analyzing the Bundle Size
+![Create React App](https://img.shields.io/badge/Create_React_App-09D3AC?style=for-the-badge&logo=Create-React-App&logoColor=09D3AC&labelColor=gray)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=CSS3&logoColor=1572B6&labelColor=gray)
 
-### Making a Progressive Web App
+![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=Discord&logoColor=5865F2&labelColor=gray)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=F05032&labelColor=gray)
 
-### Advanced Configuration
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=181717&labelColor=gray)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Google Fonts](https://img.shields.io/badge/Google_Fonts-4285F4?style=for-the-badge&logo=Google-Fonts&logoColor=4285F4&labelColor=gray)
 
-### Deployment
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=HTML5&logoColor=E34F26&labelColor=gray)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Insomnia](https://img.shields.io/badge/Insomnia-4000BF?style=for-the-badge&logo=Insomnia&logoColor=4000BF&labelColor=gray)
 
-### `npm run build` fails to minify
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=F7DF1E&labelColor=gray)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=Markdown&logoColor=000000&labelColor=gray)
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=Node.js&logoColor=339933&labelColor=gray)
+
+![Nodemon](https://img.shields.io/badge/Nodemon-76D04B?style=for-the-badge&logo=Nodemon&logoColor=76D04B&labelColor=gray)
+
+![NPM](https://img.shields.io/badge/NPM-CB3837?style=for-the-badge&logo=NPM&logoColor=CB3837&labelColor=gray)
+
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=FF6C37&labelColor=gray)
+
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=61DAFB&labelColor=gray)
+
+![Shields.io](https://img.shields.io/badge/Shields.io-000000?style=for-the-badge&logo=Shields.io&logoColor=000000&labelColor=gray)
+
+## License
+
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-A31F34?style=for-the-badge" alt="MIT License"/></a>
+
+## Contribute
+
+[Contributor Covenant](https://www.contributor-covenant.org/)
+
+## Questions
+
+Questions or concerns?</br>
+Email me!
+[Click Here](daikeen_lockett@yahoo.com)
