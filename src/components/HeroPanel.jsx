@@ -13,15 +13,21 @@ function HeroPanel({heroData, setHeroId, heroArray, setHeroArray}) {
     const savedHeroes = JSON.parse(savedHeroesData)
 
     const alreadySavedInLocal = savedHeroes?.some(savedHero => savedHero.id === object.id)
+    // debugger
     const alreadySavedInHeroArray = heroArray?.some(savedHero => savedHero.id === object.id)
 
-    if (!alreadySavedInLocal && !alreadySavedInHeroArray){
-      if (heroArray.length === 8){
-        heroArray.pop()
+    if (heroArray !== null) {
+      debugger
+      if (!alreadySavedInLocal && !alreadySavedInHeroArray){
+        if (heroArray.length === 8){
+          heroArray.pop()
+        } 
+          setHeroArray([object, ...heroArray])
+      } else {
+        console.log("Already Saved")
       }
-      setHeroArray([object, ...heroArray])
     } else {
-      console.log("Already Saved")
+      setHeroArray([object])
     }
   }
 

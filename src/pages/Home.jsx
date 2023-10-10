@@ -27,12 +27,17 @@ function Home() {
     }
     
     const heroSearch = async (hero) => {
-        const results = await API.getHeroes(hero)
-        const heroes = results.data.data.results
-        setHeroData(heroes)
+        if (searchedHero !== ""){
+            const results = await API.getHeroes(hero)
+            const heroes = results.data.data.results
+            setHeroData(heroes)
+        } else {
+            setHeroData(savedHeroes)
+        }
     }
 
     useEffect(() => {
+        debugger
         if (savedHeroes !== null){
             setHeroArray(savedHeroes)
         } 
@@ -51,11 +56,16 @@ function Home() {
         if (searchedHero !== ""){
             heroSearch(searchedHero)
         }
+        setHeroArray(savedHeroes)
+        setHeroData(savedHeroes)
     }, [searchedHero])
 
     useEffect(() => {
-        if (heroArray.length !== 0) {
-            localStorage.setItem('hero', JSON.stringify(heroArray))
+        debugger
+        if (heroArray !== null) {
+            if (heroArray.length !== 0) {
+                localStorage.setItem('hero', JSON.stringify(heroArray))
+            }
         }
     }, [heroArray])
     
