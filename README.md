@@ -39,7 +39,7 @@ So, whether you're an avid Marvel fan or just getting started, join us on this t
 
 [GitHub](https://github.com/dlockett133/marvel-encyclopedia)
 <br>
-[Live Site]()
+[Live Site](https://dlockett133.github.io/marvel-encyclopedia)
 
 ## Installation
 
