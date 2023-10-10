@@ -8,4 +8,13 @@
     font-family: 'Bangers', cursive;
     font-stretch: expanded;
     font-size: 20px;
+    color: #F8F8F8;
 }
+
+.nav-link {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-hover:hover {
+    transform: scale(1.3);
+  }

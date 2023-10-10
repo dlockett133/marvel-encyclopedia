@@ -71,7 +71,7 @@ function Home() {
   return (
     <>
         <Navigation/>
-        <Container>
+        <Container className='main'>
             <RecentComics/>
             <SearchForm 
                 handleInputChange={handleInputChange}

@@ -45,7 +45,7 @@ function HeroBio({heroId, setHeroId, savedHeroes}) {
                 <img
                 alt={`Portrait of ${selectedHero.name}`}
                 src={`${selectedHero.thumbnail.path}/portrait_incredible.${selectedHero.thumbnail.extension}`}
-                className="img-thumbnail" 
+                className="img-thumbnail hero-img" 
                 />) : (
                 <p>Loading....</p>
               )}
@@ -59,7 +59,7 @@ function HeroBio({heroId, setHeroId, savedHeroes}) {
                 <>
                  <p>{selectedHero.description}</p>
                  <div className='hero-links'>
-                   { selectedHero.urls && <a href={selectedHero.urls[0].url} target='_blank' rel='noopener noreferrer' >Lastest Comics</a>}
+                   { selectedHero.urls && <a className='hero-hover' href={selectedHero.urls[0].url} target='_blank' rel='noopener noreferrer' >Lastest Comics</a>}
                  </div>
                 </>
               )}

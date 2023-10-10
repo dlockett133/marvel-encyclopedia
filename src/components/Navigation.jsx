@@ -24,9 +24,9 @@ function Navigation() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav text-light">
-            <a className="nav-link active text-light" aria-current="page" href="#">Home</a>
-            <a className="nav-link text-light" href="#">Cinema</a>
-            <a className="nav-link text-light" href="#">My Library</a>
+            <a className="nav-link active text-light nav-hover" aria-current="page" href="#">Home</a>
+            <a className="nav-link text-light nav-hover" href="#">Cinema</a>
+            <a className="nav-link text-light nav-hover" href="#">My Library</a>
           </div>
         </div>
       </div>

@@ -1,5 +1,13 @@
+#main {
+    background: #F8F8F8;
+}
+
 .hero-name {
     font-family: 'Bangers', cursive;
     font-stretch: expanded;
     font-size: 30px;
+}
+
+.hero-img {
+	box-shadow: inset 0 0 15px 5px rgba(0,0,0,0.75);
 }

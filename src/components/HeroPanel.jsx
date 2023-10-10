@@ -45,7 +45,7 @@ function HeroPanel({heroData, setHeroId, heroArray, setHeroArray}) {
           { hero.path && hero.extension ? (
           <>
             <img 
-              className="img-thumbnail" 
+              className="img-thumbnail hero-img" 
               onClick={() => handleClick({
                 id:hero.id,
                 name:hero.name,
@@ -62,7 +62,7 @@ function HeroPanel({heroData, setHeroId, heroArray, setHeroArray}) {
           ) : (
             <>
             <img 
-              className="img-thumbnail" 
+              className="img-thumbnail hero-img" 
               onClick={() => handleClick({
                 id:hero.id,
                 name:hero.name,

@@ -5,3 +5,7 @@
     text-decoration: none;
     color: black;
 }
+
+.hero-hover:hover {
+    text-decoration: underline;
+  }
