@@ -11,6 +11,13 @@ function SearchForm({handleInputChange, handleSubmit}) {
                 className="form-control"
                 placeholder="Search For Your Hero"
                 id="search"
+                onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                        // Prevents Enter key press from submitting the form
+                        // You can add additional logic here if needed
+                        e.preventDefault()
+                    }
+                }}
             />
             <br />
         </div>

@@ -11,7 +11,7 @@ function HeroBio({heroId, setHeroId}) {
     const results = await API.getHeroById(id)
     const hero = results.data.data.results[0] 
     setSelectedHero(hero)
-    console.log(selectedHero)
+    // console.log(selectedHero)
   }
   
   useEffect(() => {
