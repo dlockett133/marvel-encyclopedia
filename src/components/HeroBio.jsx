@@ -8,14 +8,10 @@ function HeroBio({heroId, setHeroId, savedHeroes}) {
   const [selectedHero, setSelectedHero] = useState({})
   const [isHeroBio, setIsHeroBio] = useState(false)
 
-  // const savedHeroesData = localStorage.getItem('hero')
-  // const savedHeroes = JSON.parse(savedHeroesData)
-
   const singleHeroSearch = async (id) => {
     const results = await API.getHeroById(id)
     const hero = results.data.data.results[0] 
     setSelectedHero(hero)
-    // console.log(selectedHero)
   }
   
   useEffect(() => {

@@ -45,11 +45,6 @@ function Home() {
             setHeroId(heroArray[0].id)
         } 
     },[])
-
-    // useEffect(() => {
-    //     heroSearch("Silver Surfer")
-    //     setHeroId("1009592")
-    // }, [])
     
     useEffect(() => {
         if (searchedHero !== ""){
@@ -77,7 +72,6 @@ function Home() {
                 handleInputChange={handleInputChange}
                 handleSubmit={handleSubmit} 
             />
-            {/* <div>{heroName}</div> */}
             <HeroBio heroId={heroId} setHeroId={setHeroId} savedHeroes={savedHeroes}/>
             <HeroPanel 
                 heroData={heroData}

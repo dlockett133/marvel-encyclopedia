@@ -2,11 +2,6 @@ import React, {useEffect, useState} from 'react'
 
 function HeroPanel({heroData, setHeroId, heroArray, setHeroArray}) {
 
-  // const [heroArray, setHeroArray] = useState([]);
-
-  // const savedHeroesData = localStorage.getItem('hero')
-  // const savedHeroes = JSON.parse(savedHeroesData)
-
   const handleClick = (object) => {
     setHeroId(object.id)
     const savedHeroesData = localStorage.getItem('hero')

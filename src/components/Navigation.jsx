@@ -9,7 +9,7 @@ function Navigation() {
     >
       <div className="container-fluid">
         <a className="navbar-brand text-light" href="#">
-            <img src="/assets/images/Marvel_Logo.svg.png" alt=""/>
+            <img src={process.env.PUBLIC_URL + '/assets/images/Marvel_Logo.svg.png'} alt="marvel logo"/>
         </a>
         <button
           className="navbar-toggler"
